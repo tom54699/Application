@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="htf-8" />
+        <title>程式將文字倒轉顯示 取得任意範圍的亂數值</title>
+    </head>
+    <body>
+        <div>今日任務</div>
+        <ul>
+            <li>簡單的測試字串物件的各種方法(完成)</li>
+            <li>讓使用者輸入文字，程式將文字倒轉顯示(完成)</li>
+            <li>簡單的測試數學物件的方法(完成)</li>
+            <li>取得任意範圍的亂數值(完成)</li>
+        </ul>
+        <div onclick="rever()" id="response" style="border:2px solid black;width:300px;height:80px;">請點擊，然後念出來</div>
+        <div>抽籤</div>
+        <div onclick="luck()" id="luck" style="border:2px solid rgb(245, 4, 4);width:300px;height:80px;">點擊</div>
+        <script>
+        //簡單的測試字串物件的各種方法(完成)
+        let a="今天讀到9pm。"
+        console.log(a.charAt(1));
+        console.log(a.indexOf(9));
+        console.log(a.indexOf("到"));
+        console.log(a.substring(1));
+        console.log(a.toUpperCase());
+        console.log(a.toLowerCase());
+        /*
+        charAt(字元位置) 取得字串中的特定字元 從0開始算
+        indexOf(想搜尋的文字) 搜尋字串中是否包含特定文字 *indexOf 方法接受兩個參數，第一個參數為欲搜尋的字串，第二個參數為開始查找的位置，默認值為 0。若查找到符合的字串，則回傳匹配字串第一個字的索引值，若查找不到，則回覆 -1。大小寫敏感
+        substring(開頭位置, 結束位置) 取得子字串
+        toLowerCase() 將字串全轉換成小寫
+        toUpperCase() 將字串全轉換成大寫
+        */
+        //讓使用者輸入文字，程式將文字倒轉顯示
+        //使用 str.length
+        function a1(str){
+            let newstr="";
+            for(i=str.length-1;i>=0;i--){
+                newstr=newstr+str[i]
+            }
+            return newstr;
+        }
+        function a2(str){
+            let newstr="";
+            let i=str.length-1;
+            while(i>=0){
+                newstr=newstr+str[i];
+                i--;
+            }
+            console.log(newstr);
+        }
+        a2("fuck");
+        console.log(a1("hello"));
+        //使用 String.prototype.substring()
+        function a3(str){
+            let newstr="";
+            for(i=str.length;i>0;i--){
+                newstr=newstr+str.substring(i-1,i);
+            }
+            return newstr;
+        }
+        console.log(a3("想大便"));
+        //使用 String.prototype.charAt()
+        function a4(str){
+            let newstr="";
+            for(i=str.length-1;i>=0;i--){
+                newstr=newstr+str.charAt(i);
+            }
+            return newstr;
+        } 
+        console.log(a4("金色狂風"));  
+        //用了三個方法 String.prototype.split() / Array.prototype.reverse() / Array.prototype.join()
+        function rever(){
+            let respo=document.getElementById("response");
+            let x=prompt("請輸入一串文字","最好是中文"); 
+            console.log(x);
+            const y=x.split('');
+            console.log(y[0]);
+            const z=y.reverse();
+            console.log(z[0]);
+            const ans=z.join('');
+            console.log(ans);
+            respo.innerHTML=ans;
+        }
+        //簡化版
+        function reverseString(str) {
+            return str.split('').reverse().join('');
+        }
+        console.log(reverseString("hello"));  
+        //簡單的測試數學物件的方法 
+        console.log(Math.random());
+        console.log(Math.abs(-5));
+        console.log(Math.pow(10,2));
+        console.log(Math.round(3.1564654));
+        console.log(Math.floor(2.545616));
+        console.log(Math.ceil(1.2356));
+        console.log(Math.sqrt(36));
+        /*
+        Math.random() 取得 0~1 之間的亂數
+        Math.abs(數字) 取得數字的絕對值
+        Math.pow(x,y) 算出 x 的 y 次方
+        Math.round(數字) 對數字做四捨五入
+        Math.floor(數字) 對數字做無條件捨去
+        Math.ceil(數字) 對數字做無條件進位
+        Math.sqrt(數字) 對數字開根號
+        */
+       //取得任意範圍的亂數值(整數)
+       function luck(){
+        let n1=prompt("請輸入第一個數字","");
+        let n2=prompt("請輸入第二個數字","");
+        if(isNaN(n1)||isNaN(n2)){   //以防有人沒有輸入數字 isNaN() 函式會判斷某個數值是不是 NaN / 如果給定值是 NaN 就回傳 true、否則就回傳 false。
+            alert("請重新輸入(數字)");
+        }else{
+            n1=Number(n1); //prompt給回來的是字串 這個方法可以轉變成int
+            n2=Number(n2);
+            console.log(n1,n2);
+            let outcome=0;
+            outcome=Math.floor(Math.random()*(n2-n1))+n1;
+            console.log(outcome);
+        }
+       }
+        </script>
+    </body>
+</html>
