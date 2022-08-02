@@ -17,6 +17,7 @@ body{
 .list{
     display:flex;
     justify-content:center;
+    align-items: center;
 }
 .hide{
     display:none;
@@ -104,5 +105,5 @@ body{
         border:1px solid black; border-radius:5px;
         width:150px;height:30px;
         color:brown;  
-}
+    }
 }
