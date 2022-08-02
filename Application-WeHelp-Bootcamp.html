@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charset="htf-8"/>
+        <title>Application to WeHelp Bootcamp</title>
+        <link rel="stylesheet" type="text/css" href="Application-WeHelp-Bootcamp.css"/>
+    </head>
+    <body>
+        <article class="article">
+        <div class="title">WeHelp-Bootcamp 申請書</div>
+        <div class="list">
+            <div onclick="togglemaritcle1()" id="option1" class="option">申請書內容</div>
+            <div onclick="togglemaritcle()" id="option2" class="option">小小練習</div>
+        </div>
+        <hr/>
+        <ul id="body1" class="hide1">
+            <li onclick="togglemenu(1)" class="subtitle">一、個人簡介</li> 
+                <div id="answer1" class="content hide">
+                     我的名字是廖梓兆，今年28歲，畢業於中興大學外文系，現居台中。<br/>
+                     畢業後輾轉到了親戚家的紡織工廠，負責一個公司內的新部門。<br/>
+                     負責產品的開發、尋找配合廠商、到後期的電商上架，網路廣告行銷。
+                     <br/>
+                     <span><a href="https://woomi2019122.imweb.me/">這是我曾經開發的產品</a></span>
+                     <span><img id="thumb" class="img1" src="thumb.jpg"/></span>
+                     <span id="num" class="num">0</span>
+                     <br/>
+                     這樣的日子過了四年左右，因為公司內部不同的意見，最後部門被取消。<br/>
+                     今年我也被調到工廠的現場部門，但我不喜歡目前的工作內容。<br/>
+                     開始思考要換工作後，因為之前工作的經歷，覺得沒有專業技能很吃虧。<br/>
+                     在跟朋友、家人的討論下，我決定投資一段時間去學習程式設計。<br/>
+                </div>
+            <li onclick="togglemenu(2)" class="subtitle">二、為甚麼想成為前端、後端、或全端工程師?</li>
+                <div id="answer2" class="content hide">
+                    第一個原因是，朋友的建議，他說以轉職為目的話，這方面的學習對無經驗者比較友善。<br/>
+                    第二個原因是，在接觸摸索加上各種爬文下，對程式設計也有一點嚮往，不管是工作型態或者工作內容。<br/>
+                    第一次寫出一個有畫面的網頁的時候，的確蠻有成就感的。<br/>
+                    最近學到Python爬蟲的時候也很有興趣，還弄了一個簡單的版本爬我平常在看的小說存成txt檔。<br/>
+                    以前本身就習慣長時間用電腦，玩遊戲，看小說等等，往往看到網友寫出一些額外功能的輔助程式都覺得很厲害。<br/>
+                    也對未來可以開發一些自己以前就幻想過的side-project有點嚮往，也給自己多一個動力持續學習。<br/>
+                </div>
+            <li onclick="togglemenu(3)" class="subtitle">三、為了成為軟體工程師，曾做過什麼努力？</li>
+                <div id="answer3" class="content hide">
+                    因為還未離職，所以從六月中開始我開始利用下班時間看彭彭老師的影片自學。<br/>
+                    每週學習時間約25hr，目前已經把｢JavaScript網頁前端入門」的新舊版本都看完，也有跟著老師實作。<br/>
+                    也有試著做一些老師出的小題目。<br/>
+                    目前接著再看老師的Python教學，因為想認識更多後端的部分。<br/>
+                    目前也已經看了約30部左右的Python影片教學，對爬蟲很感興趣xD。<br/>
+                    如果報名成功，我也早有心理準備會全職學習這項技能。<br/>
+                </div>
+            <li onclick="togglemenu(4)" class="subtitle">四、如果參與這個計畫，會怎麼安排學習時間？</li>
+                <div id="answer4" class="content hide">
+                    因為有去聽了過往的說明會，瞭解一切都是在線上進行。<br/>
+                    所以我設想會跟維持跟上班一樣的生活作息，當作是WFH。<br/>
+                    早上八點投入學習，也有心理準備一週投入70hr的學習時間。<br/>
+                    根據我自身經驗，這對我來說是個可負荷也在過往嘗試過的學習情況。<br/>
+                    但我每天也都會規畫運動和放鬆的休息時間，因為我認為這趟程式學習旅程不會僅僅只有半年。<br/>
+                </div>
+            <li onclick="togglemenu(5)" class="subtitle">五、是否有想要加入的軟體公司？為什麼想加入該公司？</li>
+                <div id="answer5" class="content hide">
+                    身在台中，也詢問過相關職業背景的朋友，他們都建議我去台北找工作。<br/>
+                    我也有心理準備可能會有幾年要在台北磨練經驗，對第一份工作要求也不會太高。<br/>
+                    只希望可以讓我有更多學習的機會和培養更多工作經驗。<br/>
+                    但我最大的目標，期許有一定能力後可以有遠端工作的機會，這樣就可以回到台中照顧家人。<br/>
+                    當然未來最好可以進外商公司，因為福利、薪資都比較好。<br/>
+                    也希望自己許久沒有用的英語能力可以起到一點小作用。<br/>
+                </div>
+            <li onclick="togglemenu(6)" class="subtitle">六、請描述一件你曾經碰到最困難的事情，如何克服？</li>
+                <div id="answer6" class="content hide">
+                    困難的事情其實很多，像是遇到產品生產瑕疵(怨念)。<br/>
+                    但我想分享最近遇到的一件事就是要轉職的這件事。<br/>
+                    因為我也不想待在原產業，所以打開104後我徬徨了很久。<br/>
+                    過往的工作經驗，有可能在下份工作完全用不上這件事情，讓我有點挫折。<br/>
+                    這也是為甚麼想認真學習一個可以帶著走的專業技能。<br/>
+                    在下定決心要轉職，到確認目標要學習程式設計的這段時間，是我這幾年最難熬的時間。<br/>
+                    因為年紀逼近30歲，對未來的不確定性，各種心理壓力其實反而最難熬。<br/>
+                    反而在確認目標之後，有了一個方向並開始自學，心理的壓力反而隨著學習的過程慢慢降低。<br/>
+                    雖然學習中也會遇到很多困難，也會懷疑自己能不能做到。<br/>
+                    但至少開始行動後，比沒有目標的徬徨好多了。<br/>
+                </div>
+            <li onclick="togglemenu(7)" class="subtitle">七、關於這份申請網頁，請分享一個你開發時的技術心得。</li>
+                <div id="answer7" class="content hide">
+                    當下目前我的心得是，有些語法忘記了，要回去翻學習筆記。<br/>
+                    因為最近反而開始在看Python的教學，所以之前學的JS、CSS語法有時候會突然忘記。<br/>
+                    雖然基礎觀念還在，但是熟悉度會受到影響，我也不知道這是不是正常的狀況，心裡會有點擔心。<br/>
+                </div>
+            <li onclick="togglemenu(8)" class="subtitle">八、其他想要對我們說的事情？</li>
+                <div id="answer8" class="content hide">
+                    首先想先謝謝彭彭老師放在Yt的教學影片，讓我受益良多。<br/>
+                    這也是為甚麼我想加入Bootcamp的其中一個原因。<br/>
+                    履歷撰寫輔導和模擬面試練習也是吸引我的原因之一XD。<br/>
+                    我不排斥學習，但是有人帶領總是可以少走一些歪路，有個目標也能更有效率。<br/>
+                    最後我有兩點想問:<br/>
+                    一, 有關線下聚會，如果可以我會想參加但是很遠，主要想問如果有缺席影響會很大嗎?<br/>
+                    二, 雖然離我還很遠，但是根據強者我朋友分享，程式設計遠端的工作機會相對比較多，這是真的嗎?<br/>
+                </div>
+        </ul>
+        <div id="body2" class="hide1">
+            <h3>練習一</h3>
+            <div>讓使用者輸入一個數字，判斷此數字是否為質數。利用迴圈、判斷式、與 % 運算子處理。</div>
+            <hr/>
+            <button onclick="y()">點我輸入數字</button>
+            <div id="ans0" class="pracrice1ans"></div>
+            <h3>練習二</h3>
+            <div>計算功能的函式</div>
+            <hr/>
+                <form class="form"></form>
+                請輸入數字<input placeholder="輸入數字" type="text" id="num1"/>
+                <input placeholder="輸入數字" type="text" id="num2"/>
+                <br/>
+                <input type="submit" value="計算結果" onclick="calculate()" />
+                </form>
+                <hr/>
+                加法的結果:<div class="pracrice2ans" id="ans"></div>
+                減法的結果:<div class="pracrice2ans" id="ans1"></div>
+                乘法的結果:<div class="pracrice2ans" id="ans2"></div>
+                除法的結果:<div class="pracrice2ans" id="ans3"></div>
+        </div>
+        <script>
+        // 申請書主體 //
+            let thumb=document.getElementById("thumb")
+            let num=document.getElementById("num")
+            let count=0
+            thumb.addEventListener("click",function(){
+                count=count+1;
+                num.innerHTML=count;
+            })
+            thumb.addEventListener("mousedown",function(){
+                thumb.style.width="20px";
+            })
+            thumb.addEventListener("mouseup",function(){
+                thumb.style.width="16px";
+            })
+            let option1=document.getElementById("option1")
+            let option2=document.getElementById("option2")
+            option1.addEventListener("mousedown",function(){
+                option1.style.fontSize="18px";
+            })
+            option1.addEventListener("mouseup",function(){
+                option1.style.fontSize="16px";
+            })
+            option2.addEventListener("mousedown",function(){
+                option2.style.fontSize="18px";
+            })
+            option2.addEventListener("mouseup",function(){
+                option2.style.fontSize="16px";
+            })
+            function togglemaritcle1(){
+                let body1=document.getElementById("body1");
+                let body2=document.getElementById("body2");
+                body1.style.display="block";
+                body2.style.display="none";
+            }
+            function togglemaritcle(){
+                let body1=document.getElementById("body1");
+                let body2=document.getElementById("body2");
+                body1.style.display="none";
+                body2.style.display="block";
+            }
+            function togglemenu(i){
+                let answer=document.getElementById("answer"+i);
+                answer.classList.toggle("hide");
+            }
+        // 小小練習(一) //  
+        let b=document.getElementById("ans0");
+        function y(){
+            if(x()){
+            b.innerHTML="是質數"
+            }else{
+            b.innerHTML="是合數"   
+            } 
+        }
+        function x(){
+            let a=prompt("請輸入數字","");
+            a=Number(a);
+            for(let i=2;i<a;i++){
+                if(a%i==0){
+                    console.log("不是質數")
+                    return false;
+                }else{
+                    return true;
+                }
+            }
+        }  
+        // 小小練習(二) //
+        let d=document.getElementById("ans");
+            let f=document.getElementById("ans1");
+            let g=document.getElementById("ans2");
+            let h=document.getElementById("ans3");
+            function calculate(){
+                let a=document.getElementById("num1");
+                a1=a.value;
+                a1=Number(a1);
+                let c=document.getElementById("num2");
+                c1=c.value;
+                c1=Number(c1);
+                let plus=a1+c1;
+                let min=a1-c1;
+                let mul=a1*c1;
+                let div=a1/c1;
+                d.innerHTML=plus;
+                f.innerHTML=min;
+                g.innerHTML=mul;
+                h.innerHTML=div;
+                console.log(plus,min,mul,div);
+            }
+        </script>
+        </article>
+    </body>
+</html>

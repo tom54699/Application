@@ -1,0 +1,595 @@
+.body{ 
+    margin: 0; padding: 0; 
+}
+/* 首頁圖片輪播 */
+.menubar{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:transparent;
+    padding-top:9px;padding-bottom:9px;
+    position:fixed;top:0px;
+    width:100%;
+    color:white;
+}
+.menulogo{
+    flex:none;
+    width:30%;
+    display:flex;
+    justify-content:center;
+}
+.menulogo1{
+    flex:none;
+    width: 100px;
+    margin-right: 50px;
+}
+.menubutton{
+    flex:none;
+    text-align:center;
+    width:30%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:18px;
+}
+.menubuttonabout{
+    flex:none;
+    width:30%;
+}
+.menubuttonabout:hover{
+    color:#6C9CD8;
+}
+.menubuttonnews{
+    flex:none;
+    width:20%;
+}
+.menubuttonnews:hover{
+    color:#6C9CD8;
+}
+.menubuttonshop{
+    flex:none;
+    width:20%;
+}
+.menubuttonshop:hover{
+    color:#6C9CD8;
+}
+.menubuttoninfo{
+    flex:none;
+    width:30%;
+}
+.menubuttoninfo:hover{
+    color:#6C9CD8;
+}
+.menubutton1{
+    flex:none;
+    text-align:center;
+    width:30%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:3px;
+}
+.menubutton2{
+    flex:none;
+    width:50px;
+    font-size: 14px;
+    margin-right: 5px;
+}
+.menubutton3{
+    flex:none;
+    width:25px;
+    font-size: 18px;
+}
+/* 首頁圖片位置調整+輪播 */
+.box{
+    width:100%;
+    height:630px;
+}
+.headpicheight{
+    height:630px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.headpic{
+    max-width: 100%;
+    margin-top:-10%;
+}
+
+.headpicheight{
+    -webkit-animation:round 30s linear infinite;
+            animation:round 30s linear infinite;
+
+}
+@-webkit-keyframes round{
+    3.3%{
+        opacity:1;
+        filter:alpha(opacity=100);
+    }
+    16.6%{
+        opacity:1;
+        filter:alpha(opacity=100);
+    }
+    19.8%{
+        opacity:0;
+        filter:alpha(opacity=0);
+    }
+}
+@keyframes round{
+    3.3%{
+        opacity:1;
+        filter:alpha(opacity=100);
+    }
+    16.6%{
+        opacity:1;
+        filter:alpha(opacity=100);
+    }
+    19.8%{
+        opacity:0;
+        filter:alpha(opacity=0);
+    }
+}
+.box div:nth-child(6){
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+.box div:nth-child(5){
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+}
+.box div:nth-child(4){
+    -webkit-animation-delay: 10s;
+    animation-delay: 10s;
+}
+.box div:nth-child(3){
+    -webkit-animation-delay: 15s;
+    animation-delay: 15s;
+}
+.box div:nth-child(2){
+    -webkit-animation-delay: 20s;
+    animation-delay: 20s;
+}
+.box div:nth-child(1){
+    -webkit-animation-delay: 25s;
+    animation-delay: 25s;
+}
+/* 品牌介紹區塊 */
+.intromain{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+}
+.introinside{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    flex:none;
+    width:90%;
+    max-width: 1280px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.introrow{
+    flex:none;
+    width:100%;
+    height:80px;
+}
+.intro{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex:none;
+    width:100%;
+}
+.midpicbox{
+    flex:none;
+    width:50%;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    overflow: hidden;
+    height:421px;
+}
+.midpic1box{
+    flex:none;
+    width:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.intrologo{
+    flex:none;
+    width: 100%;
+    text-align: center;
+}
+.introtextbox{
+    flex:none;
+    width: 100%;
+    text-align: left;
+}
+.midpic{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    max-width: 100%;
+    max-height: 100%;
+}
+.midpic1{
+    width:315px;
+}
+.introh{
+    color:rgb(108, 156, 207); 
+    letter-spacing: 2px;
+    font-size:24px;
+    line-height:2;
+    font-weight: bold;
+}
+.introtext{
+    line-height:1.5;
+    letter-spacing:2px;
+    color:rgb(108, 156, 207);
+    font-size:14px;
+    font-weight: bold;
+}
+/* 最新消息 */ 
+.newsbox{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+}
+.newsinside{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    flex:none;
+    width: 100%;
+    max-width: 1280px;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+}
+.texttitlebox{
+    flex:none;
+    width:95%;
+}
+.newspicbox{
+    flex:none;
+    width:95%;
+    text-align: center;
+    overflow: hidden;
+}
+.newstext{
+    font-size: 22px;
+    letter-spacing: 2px;
+    color: rgb(108, 156, 207);
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.newspic{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    max-width: 100%;
+    max-height: 100%;
+}
+/* 商品精選 */
+.pdmain{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+}
+.pdinside{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    flex:none;
+    width: 100%;
+    max-width: 1280px;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+}
+
+.pdtitlebox{
+    flex:none;
+    width:95%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.pdpicbox{
+    flex:none;
+    width:95%;
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    overflow: hidden;
+
+}
+.pdpicbox0{
+    flex:none;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    position: relative;
+}
+.pdpicbox1{
+    flex:none;
+    width:23%;
+}
+.pdpic{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.pd1{
+    animation:pdslide1 15s linear infinite;
+}
+.pd2{
+    animation:pdslide2 15s linear infinite;
+}
+.pd3{
+    animation:pdslide3 15s linear infinite;
+}
+
+@keyframes pdslide1{
+    0%,
+    20% {
+        opacity:1;
+        transform: translateX(0);
+    }
+    25%,
+    45% {
+        opacity:0;
+        transform: translateX(-100%);
+    }
+    50%,
+    75% {
+        opacity:0;
+        transform: translateX(100%);
+    }
+    80%,
+    100% {
+        opacity:1;
+        transform: translateX(0);
+    }
+}
+@keyframes pdslide2{
+    0%,
+    20% {
+        opacity:0;
+        transform: translateX(0px);
+    }
+    25%,
+    45% {
+        opacity:1;
+        transform: translateX(-100%);
+    }
+    50%,
+    75% {
+        opacity:0;
+        transform: translateX(-200%);
+    }
+    80%,
+    100% {
+        opacity:0;
+        transform: translateX(0px);
+    }
+}
+@keyframes pdslide3{
+    0%,
+    20% {
+        opacity:0;
+        transform: translateX(0px);
+    }
+    25%,
+    45% {
+        opacity:0;
+        transform: translateX(-100%);
+    }
+    50%,
+    75% {
+        opacity:1;
+        transform: translateX(-200%);
+    }
+    80%,
+    100% {
+        opacity:0;
+        transform: translateX(-300%);
+    }
+}
+
+.pdnamebox{
+    margin-top: 20px;
+}
+.pdname{
+    font-size: 14px;
+    font-style: normal;
+    font-weight:500;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+.pdprice{
+    color: #ada59b;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+.viewall{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.viewallblock{
+    flex:none;
+    width:95%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.viewalltext{
+    flex:none;
+    width:10%;
+    text-align: center;
+    border: 0.5px solid black;
+    background-color: transparent;
+    font-size: 12px;
+    font-weight:bold;
+    letter-spacing: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color:black;
+}
+.viewalltext1{
+    text-align: center;
+    margin:5px;
+}
+/* 產品特色 */
+.featurebg{
+    width:100%;
+    background-image:url("bg.jpg");
+    background-size:70%;
+    background-position: center center;
+    background-repeat: repeat;
+    background-attachment:fixed;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+}
+.featuretextbox{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width:95%;
+}
+.featuretext{
+    flex:none;
+    width:50%;
+    text-align:center;
+    line-height:1.2;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.featurepicbox{
+    flex:none;
+    width:95%;
+    text-align:center;
+}
+.featurepic{
+    width:100%;
+}
+.featurenone{
+    flex:none;
+    width:95%;
+    min-height: 1px;
+    height: 120px;
+}
+/* 查看評論 */
+.commentmain{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+}
+.commentnone{
+    flex:none;
+    width:95%;
+    min-height:1px;
+    height: 71px;
+}
+.commentbox{
+    flex:none;
+    width:95%;
+}
+.commenttitle{
+    text-align:left;
+    font-size: 22px;
+    line-height: 1.2;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.comment{
+    text-align:center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 68px 0;
+    font-size: 13px;
+}
+/* 底部資訊 */
+.btinfomain{
+    width:100%;
+    background-color: #f5f3f2;
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+.btinfoinside{
+    max-width: 1280px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.btinfobox{
+    display: table;
+    width: 100%;
+}
+.btinfo{
+    display: table-cell;
+    font-size: 14px;
+    vertical-align: top;
+    width: 50%;
+    text-align: left;
+    line-height: 1;
+}
+.bthr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.btmenu{
+    display:table-cell;
+    font-size:13px;
+    vertical-align:top;
+}
+.btmenu1{
+    padding: 3px 15px;
+}
+.btmenu2{
+    margin-top:10px;
+}
+.btlaws{
+    display: table-cell;
+    font-size: 12px;
+    vertical-align: top;
+}
+.btlaws1{
+    margin-top:5px;
+}
+.btlinks{
+    display: table-cell;
+    font-size: 12px;
+    vertical-align: top;
+}
+.btlinkspic{
+    width:35px;
+    padding: 0 5px;
+}
